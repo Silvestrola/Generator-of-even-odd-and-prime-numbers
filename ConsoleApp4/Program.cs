@@ -64,14 +64,21 @@ while (true)
             Console.WriteLine(1);
             for (int n = 1; n <= num3; n++)
             {
+                //A função do Cont têm como função de chegar a quantidade de divisores que possui o número                
                 int cont = 0;
                 for (int i = 1; i < n; i++)
-                {
+                {    
+                //Exemplo: I = 1 e N = 2 --- Ele vai checar se 1 é menor que 2
+                
+                               
                     if (n % i == 0)
                     {                   
+                    // Se o resto da divisão entre 2 e 1 = 0 -- cont ++/cont = 1 ----- 
+                    // Aí vai ocorrer o adicionamento I++/I = 1 então 1 vai a passar a ser 2 e ai vai acabar o loop, porque I vai ser = N 
                         cont++;
                     }
                 }
+                // Se possuir apenas 1 divisor que foi no caso do numero 2 contador ++     
                 if (cont == 1)
                 {
                     contador++;
